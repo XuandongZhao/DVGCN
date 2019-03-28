@@ -39,7 +39,7 @@ Results on AJCC Staging label:
 | 3D-CNN    |   0.711   |    0.642    |    0.779    |
 | **DVGCN** | **0.837** |  **0.861**  |    0.813    |
 
-###Installation
+### Installation
 
 First compile s2v_lib then run the main.py  
 
