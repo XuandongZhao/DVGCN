@@ -8,7 +8,7 @@ A PyTorch implementation of "**Multi-Size Computer-Aided Diagnosis of Positron E
 
 
 <p align="justify">
-Convolutional Neural Network (CNN) has shown superior accuracy and generalizability in performing prediction/classification tasks, thanks to its good utilization of the grid-like structure of input images in Euclidean space. In this work we propose the Deep Voxel-Graph Convolution Network (DVGCN). DVGCN represents input images as their affinity graph and performs graph convolution to extract discriminative features. It then utilizes a sortpooling layer to sort the nodes in the graph and unifies the feature size used for prediction across images.</p>
+Convolutional Neural Network (CNN) has shown superior accuracy and generalizability in performing prediction tasks, thanks to its good utilization of the grid-like structure of input images in Euclidean space. In this work we propose the Deep Voxel-Graph Convolution Network (DVGCN). DVGCN represents input images as their affinity graph and performs graph convolution to extract discriminative features. It then utilizes a sortpooling layer to sort the nodes in the graph and unifies the feature size used for prediction across images.</p>
 
 ### Requirements
 
@@ -21,9 +21,9 @@ numpy             1.15.4
 pandas            0.23.4
 scipy             1.1.0
 argparse          1.1.0
-tensorflow				1.1.0
-h5py							2.5.0
-scikit-learn			0.20.3
+tensorflow        1.1.0
+h5py              2.5.0
+scikit-learn      0.20.3
 ```
 
 ### Results
@@ -38,6 +38,8 @@ Results on AJCC Staging label:
 | Radiomics |   0.821   |    0.662    |  **0.981**  |
 | 3D-CNN    |   0.711   |    0.642    |    0.779    |
 | **DVGCN** | **0.837** |  **0.861**  |    0.813    |
+
+
 
 ###Installation
 
