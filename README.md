@@ -52,5 +52,14 @@ python main.py
 
 ### Citation
 
-Coming soon...
+```
+@inproceedings{zhao2019multi,
+  title={Multi-Size Computer-Aided Diagnosis Of Positron Emission Tomography Images Using Graph Convolutional Networks},
+  author={Zhao, Xuandong and Li, Xiang and Guo, Ning and Zhou, Zhiling and Meng, Xiaxia and Li, Quanzheng},
+  booktitle={2019 IEEE 16th International Symposium on Biomedical Imaging (ISBI 2019)},
+  pages={837--840},
+  year={2019},
+  organization={IEEE}
+}
+```
 
