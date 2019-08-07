@@ -7,7 +7,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 import math
-from DGCNN_embedding import DGCNN
+from model import DVGCN
 from mlp_dropout import MLPClassifier
 from sklearn import metrics
 
@@ -25,7 +25,7 @@ class Classifier(nn.Module):
         elif cmd_args.gm == 'loopy_bp':
             model = EmbedLoopyBP
         elif cmd_args.gm == 'DGCNN':
-            model = DGCNN
+            model = DVGCN
         else:
             print('unknown gm %s' % cmd_args.gm)
             sys.exit()
@@ -238,7 +238,7 @@ if __name__ == '__main__':
         classifier = classifier.cuda()
 
     optimizer = optim.Adam(classifier.parameters(), lr=cmd_args.learning_rate)
-    #     optimizer = optim.adagrad(classifier.parameters(), lr=cmd_args.learning_rate)
+    # optimizer = optim.adagrad(classifier.parameters(), lr=cmd_args.learning_rate)
 
     train_idxes = list(range(len(train_graphs)))
     best_loss = None

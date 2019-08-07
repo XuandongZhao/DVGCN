@@ -14,11 +14,11 @@ from s2v_lib import S2VLIB
 from pytorch_util import weights_init, gnn_spmm
 
 
-class DGCNN(nn.Module):
+class DVGCN(nn.Module):
     def __init__(self, output_dim, num_node_feats, num_edge_feats, latent_dim=[32, 32, 32, 1], k=30,
                  conv1d_channels=[16, 32], conv1d_kws=[0, 5]):
-        print('Initializing DGCNN')
-        super(DGCNN, self).__init__()
+        print('Initializing DVGCN')
+        super(DVGCN, self).__init__()
         self.latent_dim = latent_dim
         self.output_dim = output_dim
         self.num_node_feats = num_node_feats
